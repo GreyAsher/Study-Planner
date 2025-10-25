@@ -36,7 +36,9 @@ namespace Infrastructure.Persistence
             new Subject { SubjectID = 1, SubjectName = "Mathematics", Description = "Math subject", Progress = 50, TargetHours = 40 },
             new Subject { SubjectID = 2, SubjectName = "Programming", Description = "C# Programming", Progress = 30, TargetHours = 60 },
             new Subject { SubjectID = 3, SubjectName = "Physics", Description = "Physics course", Progress = 70, TargetHours = 50 },
-            new Subject { SubjectID = 4, SubjectName = "Chemistry", Description = "Chemistry course", Progress = 40, TargetHours = 50 }
+            new Subject { SubjectID = 4, SubjectName = "Chemistry", Description = "Chemistry course", Progress = 40, TargetHours = 50 },
+            new Subject { SubjectID = 5, SubjectName = "History", Description = "History subject", Progress = 60, TargetHours = 50 },
+            new Subject { SubjectID = 6, SubjectName = "Language", Description = "English", Progress = 80, TargetHours = 50 }
             );
         }
     }

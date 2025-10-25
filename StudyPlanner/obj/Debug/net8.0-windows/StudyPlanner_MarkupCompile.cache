@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\App.xaml
-7-55368289
+8-1696048858
 
-11206246773
+12-941123972
 231-1989413083
-MainWindow.xaml;Views\CalendarUC.xaml;Views\Dashboard.xaml;Views\Goals.xaml;Views\Notes.xaml;Views\Subjects.xaml;Views\Today.xaml;
+MainWindow.xaml;Views\AddWindows\AddSubjectWindow.xaml;Views\CalendarUC.xaml;Views\Dashboard.xaml;Views\Goals.xaml;Views\Notes.xaml;Views\Subjects.xaml;Views\Today.xaml;
 
 False
 

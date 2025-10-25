@@ -16,6 +16,7 @@ using AppService.Interfaces;
 using AppService.Services;
 using Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
+using StudyPlanner.Views.AddViews;
 
 namespace StudyPlanner.Views
 {
@@ -24,9 +25,9 @@ namespace StudyPlanner.Views
     /// </summary>
     public partial class Subjects : UserControl
     {
-       // private readonly ISubjectService _subjectservice;
+        private readonly ISubjectService _subjectservice;
         private readonly SubjectViewModel _subjectViewModel;
-       // private readonly Subject _subject;
+        private readonly Subject _subjects;
         public Subjects(SubjectViewModel subjectViewModel/*, ISubjectService subjectservice, Subject subject*/)
         {
             InitializeComponent();
@@ -34,36 +35,16 @@ namespace StudyPlanner.Views
        //     _subjectservice = subjectservice;
        //     _subject = subject;
             DataContext = _subjectViewModel;
-            //_ = TestDatabaseConnectionAsync();
-
-            // Load subjects
 
             this.Loaded += async (s, e) => await _subjectViewModel.LoadSubjects();
-            //this.Loaded += Subjects_Loaded;
-        }
-       /* private async void Subjects_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-            await LoadSubjectsAsync();
         }
 
-        private async Task LoadSubjectsAsync()
+        private async void AddSubjectButton_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                await _subjectViewModel.LoadSubjects();
-
-                if (_subjectViewModel.Subjects.Count == 0)
-                {
-                    MessageBox.Show("No subjects found in the database.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading subjects: {ex.Message}");
-            }
-        }*/
-
+            AddSubjectWindow addSubjectWindow = new AddSubjectWindow(_subjectservice, _subjects);
+            addSubjectWindow.ShowDialog();
+            await _subjectViewModel.LoadSubjects();
+        }
     }
 }
 

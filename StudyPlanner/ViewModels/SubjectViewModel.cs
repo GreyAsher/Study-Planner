@@ -37,7 +37,10 @@ public class SubjectViewModel : BaseViewModel
             Console.WriteLine($"Error loading subjects: {ex.Message}");
         }
     }
-
-   
-
+    public async Task AddSubject(Subject subject)
+    {
+        if (subject == null) throw new ArgumentNullException(nameof(subject));
+        await _subjectservice.AddSubjectAsync(subject);
+        Subjects.Add(subject);
+    }
 }

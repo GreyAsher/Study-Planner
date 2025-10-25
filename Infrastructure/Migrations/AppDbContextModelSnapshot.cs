@@ -156,6 +156,22 @@ namespace Infrastructure.Migrations
                             Progress = 40,
                             SubjectName = "Chemistry",
                             TargetHours = 50
+                        },
+                        new
+                        {
+                            SubjectID = 5,
+                            Description = "History subject",
+                            Progress = 60,
+                            SubjectName = "History",
+                            TargetHours = 50
+                        },
+                        new
+                        {
+                            SubjectID = 6,
+                            Description = "English",
+                            Progress = 80,
+                            SubjectName = "Language",
+                            TargetHours = 50
                         });
                 });
 
