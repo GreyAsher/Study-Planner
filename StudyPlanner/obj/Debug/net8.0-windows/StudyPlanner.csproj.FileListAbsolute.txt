@@ -175,3 +175,5 @@ C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\refi
 C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\StudyPlanner.pdb
 C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\StudyPlanner.genruntimeconfig.cache
 C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\ref\StudyPlanner.dll
+C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\Views\InfoControl\SubjectInfo.baml
+C:\Users\playz\source\repos\Kenth'sSP\StudyPlanner\obj\Debug\net8.0-windows\Views\InfoControl\SubjectInfo.g.cs

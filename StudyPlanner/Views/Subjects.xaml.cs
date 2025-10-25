@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ using AppService.Services;
 using Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using StudyPlanner.Views.AddViews;
+using StudyPlanner.Views.InfoControl;
 
 namespace StudyPlanner.Views
 {
@@ -44,6 +46,35 @@ namespace StudyPlanner.Views
             AddSubjectWindow addSubjectWindow = new AddSubjectWindow(_subjectservice, _subjects);
             addSubjectWindow.ShowDialog();
             await _subjectViewModel.LoadSubjects();
+        }
+        private async void DetailButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Get the selected subject from the button's DataContext
+                var button = sender as Button;
+                var selectedSubject = button?.DataContext as Subject;
+
+                if (selectedSubject == null)
+                    return;
+
+                // Create the detail view
+                var detailView = new StudyPlanner.Views.InfoControl.SubjectInfo
+                {
+                    DataContext = selectedSubject
+                };
+
+                // Replace this UserControl’s content
+                if (this.Content is Grid grid)
+                {
+                    grid.Children.Clear();
+                    grid.Children.Add(detailView);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error opening subject details: {ex.Message}");
+            }
         }
     }
 }

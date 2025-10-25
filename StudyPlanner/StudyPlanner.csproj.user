@@ -14,6 +14,9 @@
     <Compile Update="Views\Goals.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\InfoControl\SubjectInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Notes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

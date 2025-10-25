@@ -76,7 +76,7 @@ namespace StudyPlanner.Views.AddViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/StudyPlanner;component/views/addwindows/addsubjectwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/StudyPlanner;V1.0.0.0;component/views/addwindows/addsubjectwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\AddWindows\AddSubjectWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

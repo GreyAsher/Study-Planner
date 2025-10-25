@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Background="White">
 
-    <Grid Margin="20">
+    <Grid x:Name="SubjectGrid"  Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -38,6 +38,9 @@
                         <Border Background="#E3FCEF" Padding="15" CornerRadius="12" Margin="10">
                             <StackPanel>
                                 <TextBlock Text="{Binding SubjectName}" FontSize="18" FontWeight="Bold" Foreground="#232931"/>
+                                <TextBlock Text="{Binding TargetHours, StringFormat='Target Hours: {0} hrs'}" 
+                                       Foreground="#555" 
+                                       Margin="0,5,0,0"/>
                                 <TextBlock Text="{Binding Progress, StringFormat='Progress: {0}%'}" Foreground="#555"/>
                                 <ProgressBar Value="{Binding Progress}" Height="8" Foreground="#4ECCA3" Margin="0 10 0 0"/>
                                 <Button Content="View Details"
@@ -47,7 +50,8 @@
                                         Foreground="White"
                                         FontWeight="Bold"
                                         HorizontalAlignment="Left"
-                                        Margin="0 10 0 0"/>
+                                        Margin="0 10 0 0"
+                                        Click="DetailButton_Click"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
