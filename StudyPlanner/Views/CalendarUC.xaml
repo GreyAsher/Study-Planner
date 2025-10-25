@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="StudyPlanner.Views.CalendarUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Text="Calendar and Schedule"
+                   FontSize="26"
+                   FontWeight="SemiBold"
+                   Foreground="#232931"
+                   Margin="0 0 0 20"/>
+
+        <!-- Main Layout -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Calendar Section -->
+            <Border Background="#F4F6F8" CornerRadius="12" Padding="20" Margin="0 0 20 0">
+                <StackPanel>
+                    <TextBlock Text="📅 Calendar"
+                               FontWeight="Bold"
+                               FontSize="18"
+                               Foreground="#232931"
+                               Margin="0 0 10 10"/>
+
+                    <Calendar x:Name="StudyCalendar"
+                              DisplayDate="{x:Static sys:DateTime.Now}"
+                              SelectedDate="{x:Static sys:DateTime.Now}"
+                              BorderThickness="0"
+                              Margin="0 5 0 0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Schedule Section -->
+            <Border Grid.Column="1" Background="#F4F6F8" CornerRadius="12" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="🗓️ Today's Schedule"
+                               FontWeight="Bold"
+                               FontSize="18"
+                               Foreground="#232931"
+                               Margin="0 0 15 0"/>
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="400">
+                        <StackPanel Orientation="Vertical">
+
+                            <Border Background="White" Padding="15" CornerRadius="10" BorderBrush="#E0E0E0" BorderThickness="1">
+                                <StackPanel>
+                                    <TextBlock Text="8:00 AM – 9:00 AM" FontWeight="Bold" Foreground="#4ECCA3"/>
+                                    <TextBlock Text="Mathematics: Calculus Practice" FontSize="15" Foreground="#232931"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="White" Padding="15" CornerRadius="10" BorderBrush="#E0E0E0" BorderThickness="1">
+                                <StackPanel>
+                                    <TextBlock Text="10:00 AM – 11:30 AM" FontWeight="Bold" Foreground="#4ECCA3"/>
+                                    <TextBlock Text="Programming: OOP Review" FontSize="15" Foreground="#232931"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="White" Padding="15" CornerRadius="10" BorderBrush="#E0E0E0" BorderThickness="1">
+                                <StackPanel>
+                                    <TextBlock Text="1:00 PM – 2:30 PM" FontWeight="Bold" Foreground="#4ECCA3"/>
+                                    <TextBlock Text="Physics: Problem Solving" FontSize="15" Foreground="#232931"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border Background="White" Padding="15" CornerRadius="10" BorderBrush="#E0E0E0" BorderThickness="1">
+                                <StackPanel>
+                                    <TextBlock Text="4:00 PM – 5:00 PM" FontWeight="Bold" Foreground="#4ECCA3"/>
+                                    <TextBlock Text="Biology: Review Notes" FontSize="15" Foreground="#232931"/>
+                                </StackPanel>
+                            </Border>
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

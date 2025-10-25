@@ -1,0 +1,6 @@
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\KenthSP.csproj.AssemblyReference.cache
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\Views\Today.g.cs
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\KenthSP_MarkupCompile.cache
+C:\Users\playz\source\repos\Kenth'sSP\Kenth'sSP\obj\Debug\net8.0-windows\KenthSP_MarkupCompile.lref

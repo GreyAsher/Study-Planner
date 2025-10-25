@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="StudyPlanner.Views.Goals"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Study Goals"
+                   FontSize="26"
+                   FontWeight="SemiBold"
+                   Foreground="#232931"
+                   Margin="0 0 0 20"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+
+            <CheckBox Content="Finish Calculus Chapter 5"
+                      FontSize="16"
+                      Margin="0 0 0 10"/>
+            <CheckBox Content="Review Physics Formulas"
+                      FontSize="16"
+                      Margin="0 0 0 10"/>
+            <CheckBox Content="Practice C# Project"
+                      FontSize="16"
+                      Margin="0 0 0 10"/>
+            <CheckBox Content="Memorize Biology Terms"
+                      FontSize="16"
+                      Margin="0 0 0 10"/>
+
+            <Separator Margin="0 15 0 10"/>
+            <TextBlock Text="Overall Progress" FontWeight="Bold" Foreground="#555"/>
+            <ProgressBar Value="50" Height="10" Foreground="#4ECCA3"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

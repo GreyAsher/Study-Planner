@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="StudyPlanner.Views.Notes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Notes"
+                   FontSize="26"
+                   FontWeight="SemiBold"
+                   Foreground="#232931"
+                   Margin="0 0 0 20"/>
+
+        <UniformGrid Grid.Row="1" Columns="2" Rows="2" Margin="0">
+            <Border Background="#FFF9C4" Padding="15" CornerRadius="10" Margin="10">
+                <StackPanel>
+                    <TextBlock Text="Math Shortcuts" FontWeight="Bold" FontSize="18"/>
+                    <TextBlock Text="• sin²x + cos²x = 1
+• Derivative of ln(x) = 1/x" TextWrapping="Wrap" Margin="0 5 0 0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#E1F5FE" Padding="15" CornerRadius="10" Margin="10">
+                <StackPanel>
+                    <TextBlock Text="Physics Laws" FontWeight="Bold" FontSize="18"/>
+                    <TextBlock Text="• Newton’s 3 Laws
+• Conservation of Energy" TextWrapping="Wrap" Margin="0 5 0 0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#F3E5F5" Padding="15" CornerRadius="10" Margin="10">
+                <StackPanel>
+                    <TextBlock Text="C# Reminders" FontWeight="Bold" FontSize="18"/>
+                    <TextBlock Text="• Classes use PascalCase
+• Variables use camelCase" TextWrapping="Wrap" Margin="0 5 0 0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#FFEBEE" Padding="15" CornerRadius="10" Margin="10">
+                <StackPanel>
+                    <TextBlock Text="Biology Notes" FontWeight="Bold" FontSize="18"/>
+                    <TextBlock Text="• Cell is the basic unit of life
+• DNA carries genetic info" TextWrapping="Wrap" Margin="0 5 0 0"/>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+    </Grid>
+</UserControl>
